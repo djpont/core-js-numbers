@@ -258,8 +258,7 @@ function getCube(num) {
  *   10 => 55
  */
 function getFibonacciNumber(index) {
-  if (index === 0) return 0;
-  if (index === 1) return 1;
+  if (index === 0 || index === 1) return index;
   return getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
 }
 
